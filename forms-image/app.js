@@ -9,7 +9,7 @@ app.use(express.urlencoded({ extended: true }));
 app.set("view engine", "ejs");
 
 app.get("/myget", (req, res) => {
-  res.send(req.body);
+  res.send(req.query);
 });
 
 app.get("/mygetform", (req, res) => {
