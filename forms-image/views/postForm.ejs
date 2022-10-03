@@ -10,7 +10,7 @@
 </head>
 <body class="bg-dark p-5">
     <h1 class="text-white">Post Form</h1>
-    <form>
+    <form method="POST" action="/mypost" enctype="multipart/form-data">
         <div class="mb-3">
           <label for="firstName" class="form-label text-white">firstName</label>
           <input type="text" name="firstName" class="form-control" id="firstName" aria-describedby="emailHelp">
@@ -19,6 +19,11 @@
         <div class="mb-3">
           <label for="lastName" class="form-label text-white">lastName</label>
           <input type="text" name="lastName" class="form-control" id="lastName">
+        </div>
+
+        <div class="mb-3">
+          <label for="samplefile" class="form-label text-white">samplefile</label>
+          <input type="file" name="samplefile" class="form-control" id="samplefile">
         </div>
        
         <button type="submit" class="btn btn-primary">Submit</button>
